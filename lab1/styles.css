@@ -1,0 +1,254 @@
+﻿
+* {
+	box-sizing: border-box;
+}
+html {
+
+	background-image: url(image/вов3.jpg) ;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover; /* Фоновый цвет и фоновый рисунок*/
+	color: white;
+	font-size: large;
+	font-family:Helvetica;
+
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* flex-контейнер */
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+/* общие настройки для flex-элементов */
+.col {
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* ширина блоков по умолчанию */
+.col_main
+{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.col__aside	{
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.col__nav {
+	text-align: center;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+
+}
+
+	.col__nav a {
+	background-color: #c8dbe4;
+	padding: 8px;
+	margin-top: 7px;
+	display: block;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	margin: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: #524f4e;
+	background: white;
+	box-shadow: 0 8px 15px rgba(0,0,0,.1);
+	transition: .3s;
+}
+
+.col__nav a:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46,229,157,.4);
+	color: white;
+	transform: translateY(-7px);
+}
+/*Кнопки Вперёд Назад*/
+.button_next_or_prev a {
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	padding: 12px 40px;
+	margin: 10px 20px;
+	border-radius: 30px;
+	background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: white;
+	box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+	transition: .5s;
+}
+.button_next_or_prev a:hover {
+	box-shadow: 0 0 0 0 rgba(0,40,120,0);
+	background-position: 0 0;
+}
+/*Форма Логина Пароля*/
+.form {
+	border: 2px ridge black;
+	border-radius: 30px;
+	background-image: url(image/Снимок.PNG);
+
+	float: left;
+	width: 100%;
+	padding: 15px;
+	margin-top: 7px;
+	text-align: left;
+}
+/*Кнопка Войти*/
+.log {
+	display: inline-block;
+	color: #E9967A;
+	background: #717171;
+	font-weight: 700;
+	text-decoration: none;
+	user-select: none;
+	padding: .5em 2em;
+	outline: none;
+	border: 2px solid;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+.log:hover {
+	background: rgba(255,255,255,.2);
+}
+.log:active {
+	background: white;
+}
+
+.medals{
+	width: 50px;
+	height: 50px;
+}
+
+.resultsheader{
+	text-align: center;
+	color: #0000ff;
+	font-family: Times;
+	font-size: 200%;
+	text-decoration: underline;
+
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.battlename{
+	text-align: center;
+	color: #ff0000;
+	font-family: Times;
+	font-size: 200%;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.mapsheader{
+	text-align: center;
+	color: white;
+	font-family: Times;
+	font-size: 200%;
+	text-decoration: underline;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.tape {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+
+}
+
+.tape img {
+	width: 100%;
+	height: auto;
+}
+
+.textarticle{
+	text-align: center;
+	color: #b60000;
+	font-size: 250%;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* ширина блоков  для больших экранов */
+@media (min-width: 992px) {
+	html {
+		background-image: url(image/фонПК.jpg) ;
+
+	}
+	/* 1/5 от ширины контейнера */
+	.col__nav {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	/* 1/5 от ширины контейнера */
+	.col__aside {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%
+	}
+	.col_main{
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+		padding: 0 20px;
+	}
+	.col_main2{
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;
+		padding: 0 20px;
+	}
+	.medals{
+		width: 100px;
+		height: 100px;
+	}
+	.resultsheader{
+		font-size: 250%;
+	}
+	.battlename{
+		font-size: 250%;
+	}
+	.mapsheader{
+		font-size: 250%;
+	}
+
+}
