@@ -1,0 +1,5 @@
+Windows=50
+Linux=58
+Android=39
+OS X=33
+iOS=44

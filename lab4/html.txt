@@ -1,0 +1,28 @@
+﻿	  <html>
+ <head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Федченко Алексей">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+  <title>HTML5</title>
+ </head>
+ <body>
+  <h1
+>Заго<i
+>л</i>овок</h1>
+  <!-- Комментарий -->
+  <p
+>Первый  крт абзац.</p>
+  <p>Второй абзац.</p>
+	<em
+> ggggg </em
+>
+<img>fdcsgsdg</img>
+	<i
+> jjj<strong
+>j</strong>jj</i>
+	<strong
+>fdfsdf</strong>
+	<b  >fksgoksog</b>
+ </body>
+</html>
